@@ -1,0 +1,6 @@
+apply plugin: 'java'
+dependencies{
+implementation files('../netcommon/build/libs/netcommon.jar','../netserver/build/libs/netserver.jar','../bl/build/libs/bl.jar')
+}
+
+/*To Run : java -classpath ..\build\libs\hrserver.jar;..\..\netcommon\build\libs\netcommon.jar;..\..\netserver\build\libs\netserver.jar;..\..\bl\build\libs\bl.jar;..\..\dbdl\build\libs\dbdl.jar;..\..\common\dist\hr-common.jar;C:\mysqljar\*;. com.thinking.machines.hr.server.main.Main*/

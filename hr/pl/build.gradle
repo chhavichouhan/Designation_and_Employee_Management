@@ -1,0 +1,11 @@
+apply plugin: 'java'
+dependencies{
+implementation files('../dl/dist/hr-dl-1.0.jar','../common/dist/hr-common.jar','../bl/build/libs/bl.jar')
+implementation fileTree(include:'*.jar',dir:'libs')
+ // Add iTextPDF library dependency
+implementation files('path/to/barcodes-7.1.11.jar', 'path/to/font-asian-7.1.11.jar', 'path/to/forms-7.1.11.jar', 'path/to/hyph-7.1.11.jar', 'path/to/io-7.1.11.jar', 'path/to/kernel-7.1.11.jar', 'path/to/layout-7.1.11.jar', 'path/to/log4j-1.2.16.jar', 'path/to/pdfa-7.1.11.jar', 'path/to/pdftest-7.1.11.jar', 'path/to/sign-7.1.11.jar', 'path/to/slf4j-log4j12-1.6.1.jar', 'path/to/slf4j.api-1.6.1.jar', 'path/to/styled-xml-parser-7.1.11.jar', 'path/to/svg-7.1.11.jar')
+}
+
+/*To Run :- java -classpath ..\common\dist\hr-common.jar;..\bl\build\libs\bl.jar;libs\barcodes-7.1.11.jar;libs\font-asian-7.1.11.jar;libs\forms-7.1.11.jar;libs\hyph-7.1.11.jar;libs\io-7.1.11.jar;libs\kernel-7.1.11.jar;libs\layout-7.1.11.jar;libs\log4j-1.2.16.jar;libs\pdfa-7.1.11.jar;libs\pdftest-7.1.11.jar;libs\sign-7.1.11.jar;libs\slf4j-log4j12-1.6.1.jar;libs\slf4j.api-1.6.1.jar;libs\styled-xml-parser-7.1.11.jar;libs\svg-7.1.11.jar;build\libs\pl.jar;C:\mysqljar\*;..\dbdl\build\libs\dbdl.jar;. com.thinking.machines.hr.pl.Main */
+
+/*To run(using dl) :- java -classpath ..\common\dist\hr-common.jar;..\bl\build\libs\bl.jar;libs\barcodes-7.1.11.jar;libs\font-asian-7.1.11.jar;libs\forms-7.1.11.jar;libs\hyph-7.1.11.jar;libs\io-7.1.11.jar;libs\kernel-7.1.11.jar;libs\layout-7.1.11.jar;libs\log4j-1.2.16.jar;libs\pdfa-7.1.11.jar;libs\pdftest-7.1.11.jar;libs\sign-7.1.11.jar;libs\slf4j-log4j12-1.6.1.jar;libs\slf4j.api-1.6.1.jar;libs\styled-xml-parser-7.1.11.jar;libs\svg-7.1.11.jar;build\libs\pl.jar;C:\mysqljar\*;..\dl\dist\hr-dl-1.0.jar;. com.thinking.machines.hr.pl.Main*/
